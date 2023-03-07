@@ -25,11 +25,12 @@ const markup = galleryItems.reduce(
   const lightbox = new SimpleLightbox('.gallery a', {
     captionsData: 'alt', 
     captionPosition: 'bottom', 
-    captionDelay: 250
+    captionDelay: 250,
+    close: false,  //show the close button or not
   });
 
   //2nd
-  // const galleryContainer = document.querySelector('.gallery');
+//   const galleryContainer = document.querySelector('.gallery');
 // // console.log(galleryContainer);
 // const itemsMarkup = createGalleryItemsMarkup(galleryItems);
 // galleryContainer.insertAdjacentHTML('beforeend', itemsMarkup);
@@ -52,5 +53,6 @@ const markup = galleryItems.reduce(
 // const lightbox = new SimpleLightbox('.gallery a', {
 //   captionsData: 'alt', 
 //   captionPosition: 'bottom', 
-//   captionDelay: 250
+//   captionDelay: 250,
+//   close: false,  //show the close button or not
 // });
