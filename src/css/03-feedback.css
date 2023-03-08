@@ -18,12 +18,14 @@
   padding: 8px 12px;
   font: inherit;
   cursor: pointer;
+  border-radius: 8px;
 }
 
 input,
 textarea {
   padding: 8px;
   font: inherit;
+  border-radius: 8px;
 }
 
 textarea {
