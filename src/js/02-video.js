@@ -2,12 +2,12 @@ import Player from '@vimeo/player';
 import throttle from 'lodash.throttle';
 
 const CURRENT_TIME_KEY = 'videoplayer-current-time';
-
 const iframe = document.querySelector('iframe');
+const player = new Player(iframe);
 
-const options = {
-    loop: true,
-    fullscreen: true,
-    quality: '1080p',
-  }
-const player = new Vimeo.Player(iframe, options);
+function getCurrentTime (e) {
+  localStorage.setItem(CURRENT_TIME_KEY, e.seconds);
+};
+
+player.on('timeupdate', throttle(getCurrentTime, 1000));
+player.setCurrentTime(JSON.parse(localStorage.getItem(CURRENT_TIME_KEY)) || 0);
