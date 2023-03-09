@@ -9,14 +9,15 @@ form.addEventListener('submit', onFormSubmit);
 
 let dataForm = JSON.parse(localStorage.getItem(LOCAL_KEY)) || {};
 const { email, message } = form.elements;
-reloadPage();
+console.log(form.elements);
+reloadPage();   //при перезавантаженні сторінки залишає дані у полі email та message(п.2 Task)
 
 function onInputData(e) {
   dataForm = { email: email.value, message: message.value };
   localStorage.setItem(LOCAL_KEY, JSON.stringify(dataForm));
 }
 
-function reloadPage() {
+function reloadPage() {    
   if (dataForm) {
     email.value = dataForm.email || '';
     message.value = dataForm.message || '';

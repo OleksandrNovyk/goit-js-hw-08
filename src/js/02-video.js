@@ -11,4 +11,4 @@ function getCurrentTime (e) {
 };
 
 player.on('timeupdate', throttle(getCurrentTime, 1000));
-player.setCurrentTime(localStorage.getItem(CURRENT_TIME_KEY));
+player.setCurrentTime(localStorage.getItem(CURRENT_TIME_KEY) || 0);
