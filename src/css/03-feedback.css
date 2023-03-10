@@ -30,10 +30,23 @@ textarea {
   font: inherit;
   border-radius: 18px;
   border: 3px solid #665656;
-
   background-color: darkkhaki;
 }
 
 textarea {
   resize: none;
+}
+
+.feedback-button{
+  border-radius: 18px;
+  border: 3px solid #665656;
+  margin-bottom: 25px;
+  background-color: lightsalmon;
+  color:#855a5a;
+  text-decoration: none;
+
+}
+
+.text-button{
+  font-size: 14px;
 }
