@@ -4,8 +4,8 @@
   max-width: 480px;
   padding: 12px;
   background-color: palevioletred;
-  border: 2px solid rgba(0, 0, 0, 0.12);
-  border-radius: 8px;
+  border: 3px solid #855a5a;
+  border-radius: 18px;
   
 }
 
@@ -19,7 +19,8 @@
   padding: 8px 12px;
   font: inherit;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 18px;
+  border: 3px solid #665656;
   background-color: lightsalmon;
 }
 
@@ -27,7 +28,9 @@ input,
 textarea {
   padding: 8px;
   font: inherit;
-  border-radius: 8px;
+  border-radius: 18px;
+  border: 3px solid #665656;
+
   background-color: darkkhaki;
 }
 
