@@ -3,9 +3,10 @@
   flex-direction: column;
   max-width: 480px;
   padding: 12px;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+  background-color: palevioletred;
+  border: 2px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  
 }
 
 .feedback-form label {
@@ -19,6 +20,7 @@
   font: inherit;
   cursor: pointer;
   border-radius: 8px;
+  background-color: lightsalmon;
 }
 
 input,
@@ -26,6 +28,7 @@ textarea {
   padding: 8px;
   font: inherit;
   border-radius: 8px;
+  background-color: darkkhaki;
 }
 
 textarea {
